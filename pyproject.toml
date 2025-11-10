@@ -13,6 +13,7 @@ dependencies = [
     "pyinstrument==5.1.*",
     "python-dotenv==1.2.*",
     "httpx==0.28.*",
+    "httpcore==1.0.9", # Due to httpx using old version having an issue with py314
 ]
 
 [dependency-groups]

@@ -1,5 +1,5 @@
 # 🎅 Advent of Code 20XX
-![Made with Python](https://img.shields.io/badge/Python-v3.13-blue?logo=python&logoColor=white)
+![Made with Python](https://img.shields.io/badge/Python-v3.14-blue?logo=python&logoColor=white)
 [![AoC 20XX](https://img.shields.io/badge/20XX-⭐%200-gray?logo=adventofcode&labelColor=8a2be2)](https://adventofcode.com/20XX)
 [![License: MIT](https://img.shields.io/github/license/TeKrop/advent-of-code-20XX)](https://github.com/TeKrop/advent-of-code-20XX/blob/main/LICENSE)
 

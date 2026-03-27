@@ -1,11 +1,12 @@
 import importlib
-from pathlib import Path
 import os
+from pathlib import Path
+from typing import Annotated
+
 import typer
 from dotenv import load_dotenv
 from pyinstrument import Profiler
 from rich import print
-from typing_extensions import Annotated
 
 from scripts.utils import (
     AnswerResult,
@@ -18,7 +19,11 @@ from scripts.utils import (
 load_dotenv()
 app = typer.Typer()
 
-NB_DAYS = 26 if int(os.getenv("AOC_YEAR")) < 2025 else 12
+aoc_year = os.getenv("AOC_YEAR")
+if aoc_year is None:
+    raise ValueError("AOC_YEAR environment variable is not configured")
+
+NB_DAYS = 26 if int(aoc_year) < 2025 else 12
 
 
 @app.command()

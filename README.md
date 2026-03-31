@@ -1,6 +1,6 @@
 # 🎅 Advent of Code 20XX
 ![Made with Python](https://img.shields.io/badge/Python-v3.14-blue?logo=python&logoColor=white)
-[![AoC 20XX](https://img.shields.io/badge/20XX-⭐%200-gray?logo=adventofcode&labelColor=8a2be2)](https://adventofcode.com/20XX)
+[![AoC 20XX](https://img.shields.io/badge/20XX-%200-gray?logo=adventofcode&labelColor=8a2be2)](https://adventofcode.com/20XX)
 [![License: MIT](https://img.shields.io/github/license/TeKrop/advent-of-code-20XX)](https://github.com/TeKrop/advent-of-code-20XX/blob/main/LICENSE)
 
 Advent of Code 20XX solutions in Python. It uses `uv` for dependencies management, `typer` for CLI commands, and `pyinstrument` for profiling. My goal is to write the most readable, understandable and maintainable solutions IMO, which are not necessarily the most performant ones.
@@ -47,3 +47,22 @@ If --submit is used, solution will be submitted on AoC website using your AOC_SE
 │ --help                                            Show this message and exit.                                                          │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
+
+## 🎯 Progress
+
+| Day    | Part 1 | Part 2 |
+|--------|--------|--------|
+| Day 1  |       |       |
+| Day 2  |       |       |
+| Day 3  |       |       |
+| Day 4  |       |       |
+| Day 5  |       |       |
+| Day 6  |       |       |
+| Day 7  |       |       |
+| Day 8  |       |       |
+| Day 9  |       |        |
+| Day 10 |       |        |
+| Day 11 |       |        |
+| Day 12 |        |        |
+
+*Legend: ⭐ = Star won (solution implemented)*

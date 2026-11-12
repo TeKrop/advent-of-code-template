@@ -7,9 +7,9 @@ authors = [
   {name = "Valentin PORCHET", email = "valentin.porchet@proton.me"}
 ]
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.15"
 dependencies = [
-    "typer==0.24.*",
+    "typer==0.29.*",
     "pyinstrument==5.1.*",
     "python-dotenv==1.2.*",
     "httpx==0.28.*",
@@ -17,10 +17,14 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "ruff==0.15.*",
-    "ty==0.0.*",
+    "ruff==0.17.*",
+    "pyrefly==1.4.*",
+    "complexipy==8.3.*",
 ]
 
 [tool.ruff]
-# Assume Python 3.14
-target-version = "py314"
+# Assume Python 3.15
+target-version = "py315"
+
+[tool.pyrefly]
+preset = "strict"

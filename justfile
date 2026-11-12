@@ -16,12 +16,14 @@ create-next-day:
 # run type checker
 check:
     @echo "Running type checker..."
-    uv run ty check
+    uv run pyrefly check
 
 # run linter
 lint:
     @echo "Running linter..."
     uv run ruff check --fix --exit-non-zero-on-fix
+    @echo "Running complexity checker..."
+    uv run complexipy .
 
 # run formatter
 format:

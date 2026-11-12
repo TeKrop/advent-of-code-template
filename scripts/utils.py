@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from enum import Enum, auto
 from functools import cached_property
 from pathlib import Path
-from typing import Any
+from typing import Any, ClassVar, Self
 
 import httpx
 from rich import print
@@ -53,11 +53,11 @@ class AbstractPuzzleSolver(ABC):
 
 
 class Multiton(ABC):
-    _instances = {}
+    _instances: ClassVar[dict[Any, Any]] = {}
 
-    def __new__(cls, key):
+    def __new__(cls, key: Any) -> Self:
         if key not in cls._instances:
-            cls._instances[key] = super(Multiton, cls).__new__(cls)
+            cls._instances[key] = super().__new__(cls)
         return cls._instances[key]
 
 

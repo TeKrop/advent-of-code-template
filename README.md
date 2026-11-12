@@ -18,34 +18,36 @@ Global usage
 ```
 Usage: aoc.py [OPTIONS] COMMAND [ARGS]...
 
-╭─ Options ───────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ --install-completion          Install completion for the current shell.                                         │
-│ --show-completion             Show completion for the current shell, to copy it or customize the installation.  │
-│ --help                        Show this message and exit.                                                       │
-╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-╭─ Commands ──────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ run               Run the solution for a given day.                                                             │
-│ create-next-day   Create the folder structure and files for the next day                                        │
-╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --install-completion        <bool>  Install completion for the current shell.                                        │
+│ --show-completion           <bool>  Show completion for the current shell, to copy it or customize the installation. │
+│ --help                      <bool>  Show this message and exit.                                                      │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ───────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ run              Run the solution for a given day.                                                                   │
+│ create-next-day  Create the folder structure and files for the next day                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 Run solution for a given day
 ```
-Usage: aoc.py run [OPTIONS] DAY
+Usage: aoc.py run [OPTIONS] {day}
 
 Run the solution for a given day.
+
 If --benchmark is used, pyinstrument will profile the process.
+
 If --submit is used, solution will be submitted on AoC website using your AOC_SESSION_ID.
 
-╭─ Arguments ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ *    day      INTEGER RANGE  Day of solution to run (ex: 1 for day01) [default: None] [required]                                       │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-╭─ Options ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ --data-type                      [example|input]  Data type: 'input' for user data, or 'example' for example data [default: input]     │
-│ --benchmark    --no-benchmark                     Activate benchmark mode is specified [default: no-benchmark]                         │
-│ --submit       --no-submit                        Submit the solution on AoC (AOC_SESSION_ID needed) [default: no-submit]              │
-│ --help                                            Show this message and exit.                                                          │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Arguments ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ *    day      <int range> [1<=x<=12]  Day of solution to run (ex: 1 for day01) [required]                                                │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --data-type                      <example|input>  Data type: 'input' for user data, or 'example' for example data [default: input]       │
+│ --benchmark    --no-benchmark    <bool>           Activate benchmark mode is specified [default: no-benchmark]                           │
+│ --submit       --no-submit       <bool>           Submit the solution on AoC (AOC_SESSION_ID needed) [default: no-submit]                │
+│ --help                           <bool>           Show this message and exit.                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 ## 🛠️ Development

@@ -10,7 +10,7 @@ The project comes with a dotenv file in which you can specify an `AOC_SESSION_ID
 ## 💽 Install
 The project uses `uv` for dependencies management, install it first : https://docs.astral.sh/uv/getting-started/installation/
 
-Then, install dependencies with `uv sync`
+Then, install dependencies with `uv sync` (it downloads Python 3.15 if needed)
 
 ## 🏃 Run
 
@@ -47,6 +47,15 @@ If --submit is used, solution will be submitted on AoC website using your AOC_SE
 │ --help                                            Show this message and exit.                                                          │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
+
+## 🛠️ Development
+
+The project requires Python 3.15. A `justfile` gives shortcuts to common tasks (`just` lists them):
+
+- `just check` : type checking with `pyrefly` (strict preset)
+- `just lint` : linting with `ruff`, then cognitive complexity check with `complexipy`
+- `just format` : formatting with `ruff`
+- `just lock` : upgrade dependencies in the lock file
 
 ## 🎯 Progress
 
